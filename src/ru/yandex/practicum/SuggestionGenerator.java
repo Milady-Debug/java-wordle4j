@@ -1,6 +1,8 @@
 package ru.yandex.practicum;
+
 import java.io.PrintWriter;
 import java.util.*;
+
 public class SuggestionGenerator {
     private final WordleDictionary fullDictionary;
     private final PrintWriter logger;
@@ -132,8 +134,6 @@ public class SuggestionGenerator {
         logger.println("Подсказка: " + suggestion);
         return suggestion;
     }
-
-
 
 
 }

@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
+
 /*
 в главном классе нам нужно:
     создать лог-файл (он должен передаваться во все классы)
@@ -32,7 +33,7 @@ public class Wordle {
 
             playGame(game, logger);
 
-        }catch (IOException e) {
+        } catch (IOException e) {
             System.err.println("Не удалось создать лог-файл: " + e.getMessage());
             e.printStackTrace();
         }

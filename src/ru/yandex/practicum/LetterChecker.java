@@ -1,8 +1,8 @@
 package ru.yandex.practicum;
 
 public class LetterChecker {
-    public static String analyzeGuess(String guess, String answer){
-        if(guess.length() != 5){
+    public static String analyzeGuess(String guess, String answer) {
+        if (guess.length() != 5) {
             throw new IllegalArgumentException("Слова должны быть 5-буквенными");
         }
         char[] result = new char[5];

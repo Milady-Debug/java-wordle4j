@@ -14,16 +14,16 @@ public class WordleDictionary {
     private final PrintWriter logger;
     private List<String> words;
 
-    public WordleDictionary(List<String> rawWords,  PrintWriter logger){
+    public WordleDictionary(List<String> rawWords, PrintWriter logger) {
         this.logger = logger;
-        this.words = filterWords(rawWords,5);
+        this.words = filterWords(rawWords, 5);
 
         if (words.isEmpty()) {
             throw new IllegalStateException("Словарь пуст. Нет подходящих слов для игры.");
         }
     }
 
-    public List<String> filterWords(List<String> rawWords, int length){
+    public List<String> filterWords(List<String> rawWords, int length) {
         List<String> filteredWords = new ArrayList<>();
         for (String rawWord : rawWords) {
             if (rawWord.length() == length) {

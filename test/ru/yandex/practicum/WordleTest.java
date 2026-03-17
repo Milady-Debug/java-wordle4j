@@ -12,11 +12,11 @@ class WordleTest {
 
     @Test
     public void testWordleExample() {
-        assertEquals("+^-^-",  LetterChecker.analyzeGuess("гонец", "герой"));
+        assertEquals("+^-^-", LetterChecker.analyzeGuess("гонец", "герой"));
     }
 
     @Test
     public void testDoubleLetters() {
-        assertEquals("^+^+-",  LetterChecker.analyzeGuess("лотос", "молот"));
+        assertEquals("^+^+-", LetterChecker.analyzeGuess("лотос", "молот"));
     }
 }

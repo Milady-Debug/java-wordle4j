@@ -1,4 +1,5 @@
 package ru.yandex.practicum;
+
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
@@ -19,12 +20,12 @@ public class WordleDictionaryLoader {
 
     public WordleDictionary loadDictionery(String filePath) throws WordNotFoundException {
         List<String> rawWords = new ArrayList<>();
-        try(BufferedReader br = new BufferedReader(
-                new InputStreamReader(new FileInputStream(filePath), StandardCharsets.UTF_8))){
-            while(br.ready()){
+        try (BufferedReader br = new BufferedReader(
+                new InputStreamReader(new FileInputStream(filePath), StandardCharsets.UTF_8))) {
+            while (br.ready()) {
                 String line = br.readLine();
-                if(!line.isBlank()){
-                    String readyLine = line.trim().toLowerCase().replace("ё","е");
+                if (!line.isBlank()) {
+                    String readyLine = line.trim().toLowerCase().replace("ё", "е");
                     rawWords.add(readyLine);
                 }
             }
@@ -44,7 +45,6 @@ public class WordleDictionaryLoader {
         }
 
     }
-
 
 
 }

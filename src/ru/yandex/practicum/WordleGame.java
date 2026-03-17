@@ -17,9 +17,9 @@ import java.util.List;
 не забудьте про специальные типы исключений для игровых и неигровых ошибок
  */
 public class WordleGame {
-    private String answer;                    // загаданное слово
-    private int steps;                         // количество оставшихся попыток
-    private WordleDictionary dictionary;        // словарь
+    private String answer;
+    private int steps;
+    private WordleDictionary dictionary;
 
     private final PrintWriter logger;
     private final SuggestionGenerator suggestionEngine;
